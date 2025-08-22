@@ -7,4 +7,15 @@
 #    ("Roma", 150, 4),
 #    ("Londres", 180, 3)d
 #]
+def trip_calculator(trips):
+    return {place: cost * days for (place, cost, days) in trips}
 
+
+packages = [
+    ("Paris", 200, 5),
+    ("Roma", 150, 4),
+    ("Londres", 180, 3)
+]
+
+resultado = trip_calculator(packages)
+print(resultado)
